@@ -25,11 +25,15 @@ body{
     height: 330px;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-image{
     border-radius: 360px;
     margin: 1.5em 0;
+    width: 30%;
+    align-self: center;
 }
 
 .name-and-age{
