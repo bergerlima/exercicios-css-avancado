@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font: "Public Sans", sans-serif;
+    --hover-color: #5BC241;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font);
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 0.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li a {
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.menu li a:hover {
+    background-color: var(--hover-color);
+    color: #FFF;
+}
+
+.menu li a.btn {
+    background-color: var(--hover-color);
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-left: 2rem;
+    padding: 10px 20px;
+}
