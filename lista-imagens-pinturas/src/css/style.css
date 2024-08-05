@@ -1,34 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+html{
     color: #FFFFFF;
     font-family: "Public Sans", sans-serif;
-    font-size: 17px;
-    font-weight: 300;
 }
 
-.gallery{
-    width: 100vw;
-    height: 100vh;
+main{
     display: flex;
-    flex-wrap: wrap ;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+.pinturas{
+    display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.image .caption{
-    margin-left: 20px;
-    transform: translateY(-105px);
+.pinturas .pintura{
+    width: 335px;
+    height: 431px;
+    position: relative;
 }
 
-.image .caption h2{
+.pinturas .pintura img{
+    width: 100%;
+}
+
+.pinturas .pintura .informacoes{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+}
+
+.pinturas .pintura .informacoes .titulo{
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 8px;
 }
 
-@media(max-width: 475px) {
-    .gallery{
-        flex-direction: column;
-    }
+.pinturas .pintura .informacoes .subtitulo{
+    font-size: 17px;
+    font-weight: 300;
 }
