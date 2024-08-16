@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body{
-    display: flex;
+html{
     font-family: "Roboto", sans-serif;
     font-size: 11px;
     font-weight: 300;
-    margin: 35px;
-    gap: 17px;
+}
+
+.container{
     background-color: #F7F7F7;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: "destaque anuncio" "destaque sugeridos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    gap: 17px;
+    padding: 35px;
 }
 
 .player, .anuncio, .video-recomendado-thumb{
     background-color: #C4C4C4;
+}
+
+.destaque{
+    grid-area: destaque;
 }
 
 .player{
@@ -38,13 +49,17 @@ body{
 }
 
 .anuncio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 56px;
+    grid-area: anuncio;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .recomendados{
+    grid-area: recomendados;
     display: flex;
     flex-direction: column;
     gap: 15px;
