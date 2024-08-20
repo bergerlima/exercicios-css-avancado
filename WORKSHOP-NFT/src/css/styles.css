@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-soft);
+    background-color: var(--main-bg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nft-card{
+    max-width: 350px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title-link .title{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin: 20px 0 20px;
+}
+
+.about{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}

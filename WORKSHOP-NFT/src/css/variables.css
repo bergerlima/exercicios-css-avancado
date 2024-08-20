@@ -1,0 +1,13 @@
+:root{
+    /*font colors*/
+    --primary-soft: hsl(215, 51%, 70%);
+    --primary-medium: hsl(178, 100%, 50%);
+    --anchor: hsl(0, 0%, 100%);
+ 
+    /*background colors*/
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+
+    /*line color*/
+    --line: hsl(215, 32%, 27%);
+}
