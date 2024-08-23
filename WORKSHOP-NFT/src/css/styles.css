@@ -13,27 +13,107 @@ body{
     height: 100vh;
 }
 
-.nft-card{
+.nft-card {
     max-width: 350px;
     background-color: var(--card-bg);
     border-radius: 15px;
-    padding: 25px;
+    padding: 24px;
 }
 
-img{
+.nft-card .image-link .image{
     width: 100%;
     border-radius: 10px;
 }
 
-.title-link .title{
+.nft-card .image-link::before{
+    content: '';
+    background-color: var(--primary-medium);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.nft-card .title-link .title{
     font-size: 22px;
     font-weight: 600;
     color: white;
-    margin: 20px 0 20px;
+    margin-top: 20px;
 }
 
-.about{
+.nft-card .title-link .title:hover{
+    color: var(--primary-medium);
+}
+
+.nft-card .about{
     font-size: 18px;
     font-weight: 300;
     line-height: 25px;
+    margin-top: 16px;
+}
+
+.nft-card .info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.nft-card .info .price{
+    color: var(--primary-medium);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nft-card .info .price::before{
+    content: '';
+    background-image: url(../images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+
+.nft-card .info .days-left{
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nft-card .info .days-left::before{
+    content: '';
+    background-image: url(../images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.nft-card .creator{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    border-top: solid 1px var(--line);
+    padding-top: 16px;
+}
+
+.nft-card .creator .avatar{
+    max-width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.nft-card .creator .text .name{
+    color: white;
+}
+
+.nft-card .creator .text .name:hover{
+    color: var(--primary-medium);
 }
