@@ -1,0 +1,28 @@
+QUEST HTML + CSS AVANÇADO
+
+desktop recebe background específico
+
+header com o logo do Huddle
+
+main setado em "display: flex" com duas divs
+	uma para as imagens (uma sobreposta com absolute)
+	uma para os textos e botão de registro (h1+p+a)
+
+footer com ícones das redes sociais no fim
+	(flex-end?)
+
+-----
+
+O botão de registro e os ícones de rede social ficam rosa com hover
+
+-----
+
+Para responsividade:
+
+mobile recebe background específico
+
+
+O main recebe "display: block"
+O texto do main recebe "text-align: center"
+
+O footer também fica centralizado em dispositivos móveis
