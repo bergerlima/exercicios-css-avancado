@@ -1,0 +1,55 @@
+@media (max-width: 750px) {
+
+    body{
+        background-image: url(../images/bg-mobile.svg);
+    }
+
+    header .logo{
+        display: inline-block;
+        max-width: 255px;
+        margin-top: 10px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 750px;
+        margin-top: 115px;
+    }
+
+    main .mockup img{
+        max-width: 600px;
+    }
+    
+    main .info{
+        max-width: 550px;
+    }
+
+    main .info .title{
+        margin-top: 65px;
+        font-size: 48px;
+        line-height: 66px;
+    }
+    
+    main .info .text{
+        margin-top: 40px;
+        font-size: 28px;
+        line-height: 45px;
+        letter-spacing: 0.1px;
+    }
+
+    main .info .button{
+        margin-top: 57px;
+        font-size: 28px;
+        padding: 21px 148px;
+    }
+
+    footer{
+        justify-content: center;
+        margin-right: 0;
+        font-size: 32px;
+        margin-top: 110px;
+        gap: 50px;
+    }
+
+}
